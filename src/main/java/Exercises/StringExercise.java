@@ -18,7 +18,7 @@ public class StringExercise {
         System.out.println(second);
 
 
-        String third = "In windows, the main drive is usually C: \n";
+        String third = "In windows, the main drive is usually C: \\";
 
         System.out.println(third);
 
