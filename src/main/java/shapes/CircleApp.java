@@ -16,8 +16,7 @@ public class CircleApp {
         System.out.println("this is your area " + c1.getArea());
         System.out.println("this is your circumference " + c1.getCircumference());
         System.out.println("do you want to make another circle? yes or no?");
-        String yesNo = input.nextLine();
-        yesNo(yesNo);
+
     }
 
 }
