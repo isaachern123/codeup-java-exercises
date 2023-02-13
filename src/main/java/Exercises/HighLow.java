@@ -9,7 +9,9 @@ public class HighLow {
         // 4. compare and contrast number
 
         int myNumber = (int)(Math.random() * 100) + 1;
+//        System.out.println(myNumber);
         int userInput;
+        int guesses = 0;
         do {
 
             userInput = MethodsExercise.getInteger(1, 100);
@@ -21,7 +23,9 @@ public class HighLow {
             } else {
                 System.out.println("nice");
             }
+            guesses++;
         }while (userInput != myNumber);
         System.out.println("game over");
+        System.out.println("you made " + guesses + " guesses");
     }
 }
