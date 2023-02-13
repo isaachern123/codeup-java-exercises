@@ -6,7 +6,7 @@ public class Person {
 
     private String lastName;
 
-    private String sayHello() {
+    public String sayHello() {
         return String.format("Hello from %s %s!", firstName, lastName);
     }
 
