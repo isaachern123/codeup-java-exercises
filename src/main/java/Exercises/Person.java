@@ -2,9 +2,9 @@ package Exercises;
 
 public class Person {
 
-    public String firstName;
+    private String firstName;
 
-    public String lastName;
+    private String lastName;
 
     public String sayHello() {
         return String.format("Hello from %s %s!", firstName, lastName);
@@ -22,6 +22,23 @@ public class Person {
         System.out.println(sue.sayHello());
     }
 
+    // accessors
 
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
 
