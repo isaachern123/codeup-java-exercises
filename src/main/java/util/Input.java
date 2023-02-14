@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Input {
     static Scanner input = new Scanner(System.in);
 
-
+        // Get String
     public static String getString(){
 
     }
-
+        // Yes Or No
     public static boolean yesNo(){
         return yesOrNo.equals("yes") || yesOrNo.equals("Yes");
     }
 
-
+        // Get Int With Parameters
     public static int getInt(int min, int max){
         System.out.println("choose a number between " + min + " and " + max);
         int myNumber = input.nextInt();
@@ -26,6 +26,14 @@ public class Input {
         return myNumber;
     }
 
+
+        // Get Int
+    public static int getInt(){
+
+    }
+
+
+        // Get Double With Parameters
     public static double getDouble(double min, double max){
         System.out.println("choose a number between " + min + " and " + max);
         double myNumber = input.nextDouble();
@@ -35,6 +43,12 @@ public class Input {
             return getDouble(min, max);
         }
         return myNumber;
+    }
+
+
+        // Get Double
+    public static double getDouble(){
+
     }
 
 
