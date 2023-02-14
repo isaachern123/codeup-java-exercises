@@ -1,6 +1,5 @@
-package Exercises;
+package exercises;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 

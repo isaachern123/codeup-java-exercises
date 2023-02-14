@@ -1,6 +1,4 @@
-package Exercises;
-
-import java.sql.SQLOutput;
+package exercises;
 
 public class StringExercise {
     public static void main(String[] args) {

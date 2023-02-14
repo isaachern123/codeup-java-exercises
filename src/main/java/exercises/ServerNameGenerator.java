@@ -1,4 +1,4 @@
-package Exercises;
+package exercises;
 
 public class ServerNameGenerator {
     static String[] adjectives = {"bad", "amused", "average", "difficult", "cute", "innocent", "homely", "frightened", "selfish", "witty"};

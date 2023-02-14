@@ -61,6 +61,11 @@ public class Input {
         return sc.nextDouble();
     }
 
+    public double getDouble(String prompt){
+        System.out.println(prompt);
+        return getDouble();
+    }
+
 
         // Get Double With Parameters
     public double getDouble(double min, double max){
