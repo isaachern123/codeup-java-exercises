@@ -10,7 +10,7 @@ public class Person {
         System.out.println(name);
     }
 
-    public Person(String name) {
+    public Person(String name){
         this.name = name;
     }
 
