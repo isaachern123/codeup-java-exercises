@@ -5,12 +5,17 @@ import java.util.Scanner;
 public class Input {
     static Scanner input = new Scanner(System.in);
 
-    public static boolean yesNo(String yesOrNo) {
+
+    public static String getString(){
+
+    }
+
+    public static boolean yesNo(){
         return yesOrNo.equals("yes") || yesOrNo.equals("Yes");
     }
 
 
-    public static int getInt(int min, int max) {
+    public static int getInt(int min, int max){
         System.out.println("choose a number between " + min + " and " + max);
         int myNumber = input.nextInt();
         if (myNumber >= min && myNumber <= max) {
@@ -21,7 +26,7 @@ public class Input {
         return myNumber;
     }
 
-    public static double getDouble(double min, double max) {
+    public static double getDouble(double min, double max){
         System.out.println("choose a number between " + min + " and " + max);
         double myNumber = input.nextDouble();
         if (myNumber >= min && myNumber <= max) {
