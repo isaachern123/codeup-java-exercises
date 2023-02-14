@@ -2,8 +2,14 @@ package movies;
 
 import util.Input;
 
+import java.util.Arrays;
+
 public class MoviesApplication {
-    public static void main(String[] args) {
+
+    private static Movie [] movies;
+
+
+    public static int getUserInput(){
         Input Input = new Input();
         System.out.println("what would you like to do?\n");
         System.out.println("0 - exit");
@@ -12,6 +18,51 @@ public class MoviesApplication {
         System.out.println("3 - view drama movies");
         System.out.println("4 - view horror movies");
         System.out.println("5 - view scifi movies");
-        int userInput = Input.getInt();
+        return Input.getInt();
+
+    }
+
+
+    private static void doChoice(int choice){
+        switch (choice) {
+            case 1 -> getAllMovies();
+            case 2 -> getAnimatedMovies();
+            case 3 -> getDramaMovies();
+            case 4 -> getHorrorMovies();
+            case 5 -> getSciFiMovies();
+        }
+    }
+
+
+    private static void getAllMovies() {
+        System.out.println(MoviesArray.findAll());
+    }
+
+    private static void getAnimatedMovies() {
+    }
+
+    private static void getDramaMovies() {
+    }
+
+    private static void getHorrorMovies() {
+    }
+
+    private static void getSciFiMovies() {
+    }
+
+
+    public static void main(String[] args) {
+
+
+        while(true){
+            int choice = getUserInput();
+
+            doChoice(choice);
+
+            if (choice == 0){
+                break;
+            }
+
+        }
     }
 }
