@@ -38,6 +38,11 @@ public class Input {
     }
 
 
+    public int getInt(String prompt){
+        System.out.println(prompt);
+        return getInt();
+    }
+
     // Get Int With Parameters
     public int getInt(int min, int max){
         System.out.println("choose a number between " + min + " and " + max);
