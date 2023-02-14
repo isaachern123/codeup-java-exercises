@@ -14,6 +14,14 @@ public class Movie {
 
     //accessors
 
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

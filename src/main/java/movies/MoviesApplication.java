@@ -9,6 +9,7 @@ public class MoviesApplication {
     private static Movie [] movies;
 
 
+
     public static int getUserInput(){
         Input Input = new Input();
         System.out.println("what would you like to do?\n");
@@ -35,10 +36,13 @@ public class MoviesApplication {
 
 
     private static void getAllMovies() {
-        System.out.println(MoviesArray.findAll());
+        System.out.println(Arrays.toString(MoviesArray.findAll()));
     }
 
     private static void getAnimatedMovies() {
+        for (String category : MoviesArray){
+
+        }
     }
 
     private static void getDramaMovies() {
