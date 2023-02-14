@@ -3,21 +3,45 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    static Scanner input = new Scanner(System.in);
+    private Scanner sc;
+
+    public Input() {
+        sc = new Scanner(System.in);
+    }
 
         // Get String
-    public static String getString(){
-
+    public String getString(){
+        return sc.nextLine();
     }
+
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return getString();
+    }
+
+
         // Yes Or No
-    public static boolean yesNo(){
-        return yesOrNo.equals("yes") || yesOrNo.equals("Yes");
+    public boolean yesNo(){
+        String response = getString();
+        return response.equalsIgnoreCase("yes") || response.equalsIgnoreCase("true");
     }
 
-        // Get Int With Parameters
-    public static int getInt(int min, int max){
+    public boolean yesNo(String prompt){
+        System.out.println(prompt);
+        return yesNo();
+    }
+
+
+    // Get Int
+    public int getInt(){
+        return sc.nextInt();
+    }
+
+
+    // Get Int With Parameters
+    public int getInt(int min, int max){
         System.out.println("choose a number between " + min + " and " + max);
-        int myNumber = input.nextInt();
+        int myNumber = getInt();
         if (myNumber >= min && myNumber <= max) {
             System.out.println("good job");
         } else {
@@ -27,16 +51,16 @@ public class Input {
     }
 
 
-        // Get Int
-    public static int getInt(){
-
+    // Get Double
+    public double getDouble(){
+        return sc.nextDouble();
     }
 
 
         // Get Double With Parameters
-    public static double getDouble(double min, double max){
+    public double getDouble(double min, double max){
         System.out.println("choose a number between " + min + " and " + max);
-        double myNumber = input.nextDouble();
+        double myNumber = getDouble();
         if (myNumber >= min && myNumber <= max) {
             System.out.println("good job");
         } else {
@@ -46,21 +70,6 @@ public class Input {
     }
 
 
-        // Get Double
-    public static double getDouble(){
 
-    }
-
-
-
-
-
-    public static void main(String[] args) {
-        System.out.println(yesNo("yes"));
-        System.out.println(yesNo("no"));
-        System.out.println(getInt(1, 10));
-        System.out.println(getDouble(1.0, 10.0));
-
-    }
 }
 
