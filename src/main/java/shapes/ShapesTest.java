@@ -9,6 +9,7 @@ public class ShapesTest {
         System.out.println("perimeter: " + box1.getPerimeter());
         System.out.println("area: " + box2.getArea());
         System.out.println("perimeter: " + box2.getPerimeter());
+        System.out.println("all done");
 
 
 
