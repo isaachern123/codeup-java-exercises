@@ -4,6 +4,8 @@ import util.Input;
 
 import java.util.Arrays;
 
+import movies.Movie;
+
 public class MoviesApplication {
 
     private static Movie [] movies = MoviesArray.findAll();
@@ -27,32 +29,52 @@ public class MoviesApplication {
     private static void doChoice(int choice){
         switch (choice) {
             case 1 -> getAllMovies();
-            case 2 -> getAnimatedMovies();
-            case 3 -> getDramaMovies();
-            case 4 -> getHorrorMovies();
-            case 5 -> getSciFiMovies();
+            case 2 -> getAnimatedMovies("animated");
+            case 3 -> getDramaMovies("drama");
+            case 4 -> getHorrorMovies("horror");
+            case 5 -> getSciFiMovies("scifi");
         }
     }
+
 
 
     private static void getAllMovies() {
-        System.out.println(Arrays.toString(MoviesArray.findAll()));
-    }
-
-    private static void getAnimatedMovies() {
-        for (int i = 0; i < movies.length ; i++) {
-            if ()
+        for (Movie movie : movies) {
+            System.out.println(movie);
         }
 
     }
 
-    private static void getDramaMovies() {
+    private static void getAnimatedMovies(String category) {
+        for (Movie movie : movies) {
+            if(movie.getCategory().equals(category)){
+                System.out.println(movie);
+            }
+        }
+    }
+    private static void getDramaMovies(String category) {
+        for (Movie movie : movies) {
+            if(movie.getCategory().equals(category)){
+                System.out.println(movie);
+            }
+        }
     }
 
-    private static void getHorrorMovies() {
+    private static void getHorrorMovies(String category) {
+        for (Movie movie : movies) {
+            if(movie.getCategory().equals(category)){
+                System.out.println(movie);
+            }
+            movie.for
+        }
     }
 
-    private static void getSciFiMovies() {
+    private static void getSciFiMovies(String category) {
+        for (Movie movie : movies) {
+            if(movie.getCategory().equals(category)){
+                System.out.println(movie);
+            }
+        }
     }
 
 

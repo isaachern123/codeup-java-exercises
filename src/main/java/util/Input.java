@@ -80,7 +80,7 @@ public class Input {
     }
 
     public static void main(String[] args) {
-        getint("pick a number")
+
     }
 
 }
