@@ -17,11 +17,13 @@ public class Square extends Rectangle{
 
     @Override
     public double getArea() {
+        System.out.println("square");
         return super.getArea();
     }
 
     @Override
     public double getPerimeter() {
+        System.out.println("square");
         return super.getPerimeter();
     }
 }
