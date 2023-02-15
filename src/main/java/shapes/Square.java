@@ -18,12 +18,12 @@ public class Square extends Rectangle{
     @Override
     public double getArea() {
         System.out.println("square");
-        return super.getArea();
+        return side * side;
     }
 
     @Override
     public double getPerimeter() {
         System.out.println("square");
-        return super.getPerimeter();
+        return side * 4;
     }
 }
