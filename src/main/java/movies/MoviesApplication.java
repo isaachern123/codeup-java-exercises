@@ -29,10 +29,10 @@ public class MoviesApplication {
     private static void doChoice(int choice){
         switch (choice) {
             case 1 -> getAllMovies();
-            case 2 -> getAnimatedMovies("animated");
-            case 3 -> getDramaMovies("drama");
-            case 4 -> getHorrorMovies("horror");
-            case 5 -> getSciFiMovies("scifi");
+            case 2 -> getMoviesByCategory("animated");
+            case 3 -> getMoviesByCategory("drama");
+            case 4 -> getMoviesByCategory("horror");
+            case 5 -> getMoviesByCategory("scifi");
         }
     }
 
@@ -45,31 +45,7 @@ public class MoviesApplication {
 
     }
 
-    private static void getAnimatedMovies(String category) {
-        for (Movie movie : movies) {
-            if(movie.getCategory().equals(category)){
-                System.out.println(movie);
-            }
-        }
-    }
-    private static void getDramaMovies(String category) {
-        for (Movie movie : movies) {
-            if(movie.getCategory().equals(category)){
-                System.out.println(movie);
-            }
-        }
-    }
-
-    private static void getHorrorMovies(String category) {
-        for (Movie movie : movies) {
-            if(movie.getCategory().equals(category)){
-                System.out.println(movie);
-            }
-
-        }
-    }
-
-    private static void getSciFiMovies(String category) {
+    private static void getMoviesByCategory(String category) {
         for (Movie movie : movies) {
             if(movie.getCategory().equals(category)){
                 System.out.println(movie);
