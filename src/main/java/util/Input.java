@@ -79,7 +79,9 @@ public class Input {
         return myNumber;
     }
 
-
+    public static void main(String[] args) {
+        getint("pick a number")
+    }
 
 }
 

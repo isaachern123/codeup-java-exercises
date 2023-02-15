@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class MoviesApplication {
 
-    private static Movie [] movies;
+    private static Movie [] movies = MoviesArray.findAll();
 
 
 
@@ -40,9 +40,10 @@ public class MoviesApplication {
     }
 
     private static void getAnimatedMovies() {
-        for (String category : MoviesArray){
-
+        for (int i = 0; i < movies.length ; i++) {
+            if ()
         }
+
     }
 
     private static void getDramaMovies() {
