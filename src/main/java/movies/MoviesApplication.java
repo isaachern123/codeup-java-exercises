@@ -65,7 +65,7 @@ public class MoviesApplication {
             if(movie.getCategory().equals(category)){
                 System.out.println(movie);
             }
-            movie.for
+
         }
     }
 
