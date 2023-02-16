@@ -30,4 +30,4 @@ abstract class Quadrilateral extends Shape
     public abstract void setWidth(int width);
 
 }
-}
+
