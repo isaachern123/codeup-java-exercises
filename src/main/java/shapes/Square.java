@@ -5,8 +5,9 @@ public class Square extends Quadrilateral
 
     protected int side;
 
-    public Square(int length, int width) {
-        super(length, width);
+    public Square(int side) {
+        super(side, side);
+        this.side = side;
     }
 
     @Override
