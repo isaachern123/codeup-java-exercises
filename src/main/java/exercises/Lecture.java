@@ -2,6 +2,7 @@ package exercises;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Lecture {
     public static void main(String[] args) {
@@ -21,7 +22,9 @@ public class Lecture {
         System.out.println(foods);
 
 
-        foods = new ArrayList<>(Arrays.asList("apple", "banana"));
+//        foods = new ArrayList<>(Arrays.asList("apple", "banana"));
+        foods = new ArrayList<>(List.of("apple", "banana"));
+
         System.out.println(foods);
 
         for (int i = 0; i < foods.size(); i++) {
