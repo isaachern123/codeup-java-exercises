@@ -7,5 +7,6 @@ public class StudentTest {
         newStudent.addGrade(89);
         newStudent.addGrade(26);
         System.out.println(newStudent.getGradeAverage());
+        System.out.println(newStudent);
     }
 }
