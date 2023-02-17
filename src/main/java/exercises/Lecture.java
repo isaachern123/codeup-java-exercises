@@ -34,5 +34,15 @@ public class Lecture {
 
         System.out.println(foods.indexOf("apple"));
 
+        System.out.println(foods.contains("apple"));
+        System.out.println(foods.contains("Apple"));
+        System.out.println(foods.contains("butter"));
+
+
+        foods.add("animal");
+        System.out.println(foods);
+        foods.remove("animal");
+        System.out.println(foods);
+
     }
 }
