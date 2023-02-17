@@ -2,6 +2,7 @@ package exercises;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class LectureHashMap {
@@ -46,6 +47,10 @@ public class LectureHashMap {
         System.out.println(foods);
         foods.remove("animal");
         System.out.println(foods);
+
+
+        HashMap<String, String> example = new HashMap<>();
+
 
     }
 }
