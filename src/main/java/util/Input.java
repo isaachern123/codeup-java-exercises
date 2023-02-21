@@ -115,9 +115,7 @@ public class Input {
         return getDouble(min, max);
     }
 
-    public static void main(String[] args) {
 
-    }
 
 }
 
