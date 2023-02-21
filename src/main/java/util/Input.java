@@ -116,6 +116,27 @@ public class Input {
     }
 
 
+    //Get Binary
+
+
+    public int getBinary() {
+//        return sc.nextInt();
+        int userInt = 0;
+
+        String s = getString();
+
+        try {
+            userInt = Integer.parseInt(s);
+
+        } catch (NumberFormatException) {
+            System.out.println("Invalid Integer. Please re-enter; ");
+            userInt = getInt();
+        }
+
+        return userInt;
+    }
+
+
 
 }
 
