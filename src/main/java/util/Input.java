@@ -33,8 +33,21 @@ public class Input {
 
 
     // Get Int
-    public int getInt(){
-        return sc.nextInt();
+    public int getInt() {
+//        return sc.nextInt();
+        int userInt = 0;
+
+        String s = getString();
+
+        try {
+            userInt = Integer.valueOf(s);
+
+        } catch (NumberFormatException) {
+            System.out.println("Invalid Integer. Please re-enter; ");
+            userInt = getInt();
+        }
+
+        return userInt;
     }
 
 
@@ -55,10 +68,28 @@ public class Input {
         return myNumber;
     }
 
+    public int getInt(int min, int max, String prompt){
+        System.out.println(prompt);
+        return getInt(min, max);
+    }
+
 
     // Get Double
     public double getDouble(){
-        return sc.nextDouble();
+//        return sc.nextDouble();
+        int userDouble = 0;
+
+        String s = getString();
+
+        try {
+            userDouble = Integer.valueOf(s);
+
+        } catch (NumberFormatException) {
+            System.out.println("Invalid Integer. Please re-enter; ");
+            userDouble = getDouble();
+        }
+
+        return userDouble;
     }
 
     public double getDouble(String prompt){
@@ -77,6 +108,11 @@ public class Input {
             return getDouble(min, max);
         }
         return myNumber;
+    }
+
+    public double getDouble(int min, int max, String prompt){
+        System.out.println(prompt);
+        return getDouble(min, max);
     }
 
     public static void main(String[] args) {
