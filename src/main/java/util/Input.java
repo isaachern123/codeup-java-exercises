@@ -40,7 +40,7 @@ public class Input {
         String s = getString();
 
         try {
-            userInt = Integer.valueOf(s);
+            userInt = Integer.parseInt(s);
 
         } catch (NumberFormatException) {
             System.out.println("Invalid Integer. Please re-enter; ");
@@ -82,7 +82,7 @@ public class Input {
         String s = getString();
 
         try {
-            userDouble = Double.valueOf(s);
+            userDouble = Double.parseDouble(s);
 
         } catch (NumberFormatException) {
             System.out.println("Invalid Integer. Please re-enter; ");
