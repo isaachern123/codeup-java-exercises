@@ -42,7 +42,7 @@ public class Input {
         try {
             userInt = Integer.parseInt(s);
 
-        } catch (NumberFormatException) {
+        } catch (NumberFormatException e) {
             System.out.println("Invalid Integer. Please re-enter; ");
             userInt = getInt();
         }
@@ -84,7 +84,7 @@ public class Input {
         try {
             userDouble = Double.parseDouble(s);
 
-        } catch (NumberFormatException) {
+        } catch (NumberFormatException e) {
             System.out.println("Invalid Integer. Please re-enter; ");
             userDouble = getDouble();
         }
@@ -126,16 +126,32 @@ public class Input {
         String s = getString();
 
         try {
-            userInt = Integer.parseInt(s);
+            userInt = Integer.valueOf(s, 2);
 
-        } catch (NumberFormatException) {
+        } catch (NumberFormatException e) {
             System.out.println("Invalid Integer. Please re-enter; ");
-            userInt = getInt();
+            userInt = getBinary();
         }
 
         return userInt;
     }
 
+    public int getHex() {
+//        return sc.nextInt();
+        int userInt = 0;
+
+        String s = getString();
+
+        try {
+            userInt = Integer.valueOf(s, 16);
+
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid Integer. Please re-enter; ");
+            userInt = getHex();
+        }
+
+        return userInt;
+    }
 
 
 }
