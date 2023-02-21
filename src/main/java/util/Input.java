@@ -77,12 +77,12 @@ public class Input {
     // Get Double
     public double getDouble(){
 //        return sc.nextDouble();
-        int userDouble = 0;
+        double userDouble = 0;
 
         String s = getString();
 
         try {
-            userDouble = Integer.valueOf(s);
+            userDouble = Double.valueOf(s);
 
         } catch (NumberFormatException) {
             System.out.println("Invalid Integer. Please re-enter; ");
