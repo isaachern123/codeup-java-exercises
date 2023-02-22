@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner sc;
+    private final Scanner sc;
 
     public Input() {
         sc = new Scanner(System.in);
@@ -34,7 +34,6 @@ public class Input {
 
     // Get Int
     public int getInt() {
-//        return sc.nextInt();
         int userInt = 0;
 
         String s = getString();
@@ -76,7 +75,6 @@ public class Input {
 
     // Get Double
     public double getDouble(){
-//        return sc.nextDouble();
         double userDouble = 0;
 
         String s = getString();
@@ -85,7 +83,7 @@ public class Input {
             userDouble = Double.parseDouble(s);
 
         } catch (NumberFormatException e) {
-            System.out.println("Invalid Integer. Please re-enter; ");
+            System.out.println("Invalid Integer. Please re-enter: ");
             userDouble = getDouble();
         }
 
@@ -120,7 +118,6 @@ public class Input {
 
 
     public int getBinary() {
-//        return sc.nextInt();
         int userInt = 0;
 
         String s = getString();
@@ -129,7 +126,7 @@ public class Input {
             userInt = Integer.valueOf(s, 2);
 
         } catch (NumberFormatException e) {
-            System.out.println("Invalid Integer. Please re-enter; ");
+            System.out.println("Invalid Integer. Please re-enter: ");
             userInt = getBinary();
         }
 
@@ -137,7 +134,6 @@ public class Input {
     }
 
     public int getHex() {
-//        return sc.nextInt();
         int userInt = 0;
 
         String s = getString();
@@ -146,7 +142,7 @@ public class Input {
             userInt = Integer.valueOf(s, 16);
 
         } catch (NumberFormatException e) {
-            System.out.println("Invalid Integer. Please re-enter; ");
+            System.out.println("Invalid Integer. Please re-enter: ");
             userInt = getHex();
         }
 
