@@ -21,7 +21,7 @@ public class MoviesApplication {
         System.out.println("3 - view drama movies");
         System.out.println("4 - view horror movies");
         System.out.println("5 - view scifi movies");
-        return Input.get();
+        return Input.getInt();
 
     }
 
