@@ -42,7 +42,7 @@ public class Input {
             userInt = Integer.parseInt(s);
 
         } catch (NumberFormatException e) {
-            System.out.println("Invalid Integer. Please re-enter; ");
+            System.out.println("Invalid Integer. Please re-enter: ");
             userInt = getInt();
         }
 
