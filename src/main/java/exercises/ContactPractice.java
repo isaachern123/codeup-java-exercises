@@ -3,9 +3,9 @@ package exercises;
 public class ContactPractice {
     public String name;
 
-    public int phoneNumber;
+    public String phoneNumber;
 
-    public ContactPractice(String name, int phoneNumber) {
+    public ContactPractice(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
@@ -28,11 +28,11 @@ public class ContactPractice {
         this.name = name;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 }
